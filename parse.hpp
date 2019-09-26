@@ -6,10 +6,12 @@
 #ifndef PARSE_HPP
 #define PARSE_HPP
 
-#include <cstring>
+#include <string.h>
 #include <stdio.h>
 #include <iostream>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 #define MAXARGS 32
 
@@ -18,9 +20,11 @@ class Parse
 	public:
 		Parse();
 		int getFirstArg();
+		int getBackround();
 		void parseInput(char *buf);
 		void printParams();
 		void refresh();
+		void execute();
 		
 	private:
 		char* inputRedirect;           /* file name or NULL */
