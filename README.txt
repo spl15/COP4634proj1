@@ -1,9 +1,10 @@
     The purpose of this program is to be used a rudimentary shell program in the 
-Linux nvironment. The main function of this program is to show a very simple 
+Linux environment. The main function of this program is to show a very simple 
 example of how a shell operates, and to help illustrate how the inner workings of a 
 more complex shell(bash, csh) program might act. The program should accept and execute
-all shell commands that are already in the  path /usr/bin. This program will exit 
-when keyword “exit” is entered into the command promp regardless of case.
+all of the normal shell commands, and will also make use of the "<"input redirect symbol, ">"output
+redirect symbol, and the "&"run in backround symbol.This program will exit when keyword “exit” is 
+entered into the command promp regardless of case.
 	This project comes with a make file to easily use with the program. The “make” 
 command will compile, link and build the executable. The “make run” command will run 
 make and then run the executable. The "makle clean" will remove all object files and 
